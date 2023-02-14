@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud app</title>
+</head>
+<body>
+    <form>
+        <input id="name" type="text" name="name" placeholder="Name">
+        <input id="email" type="text" name="email" placeholder="Email">
+        <input id="phone" type="text" name="phone" placeholder="Phone">
+        <input type="password" name="password" id="pass" placeholder="Password">
+        <button id="register" type="button" name="ragistrar" value="Registrar">Registrar</button>
+    </form>
+
+
+    <form>
+        <input id="email_login" type="text" name="email" placeholder="Email">
+        <input type="password" name="password" id="pass_login" placeholder="Password">
+        <button id="login" type="button" name="login" value="login">Login</button>
+    </form>
+
+    <form style="display: none;" id="update">
+        <input id="name_update" type="text" name="name" placeholder="Name">
+        <input id="email_update" type="text" name="email" placeholder="Email">
+        <input id="phone_update" type="text" name="phone" placeholder="Phone">
+        <input type="password" name="password" id="pass_update" placeholder="Password">
+        <button onclick="userUpdate()" id="update" type="button" name="update" value="Update">Actualizar</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="content-table">
+            
+        </tbody>
+    </table>
+
+    <script src="./index.js"></script>
+</body>
+</html>
